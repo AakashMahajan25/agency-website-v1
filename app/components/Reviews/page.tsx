@@ -35,8 +35,8 @@ const Reviews: React.FC = () => {
           <SwiperSlide key={i}>
             <div className="border border-blue rounded-xl p-10 italic text-3xl text-center">
               <blockquote>
-                "Financial planners help people to gain knowledge about how to invest and save their money the most
-                efficient way."
+                &ldquo;Financial planners help people to gain knowledge about how to invest and save their money the most
+                efficient way.&rdquo;
               </blockquote>
 
               <div>

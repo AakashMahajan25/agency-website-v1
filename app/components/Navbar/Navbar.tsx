@@ -2,6 +2,7 @@ import { Disclosure } from '@headlessui/react';
 import { Bars3Icon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import Signdialog from "./Signdialog";
@@ -40,15 +41,19 @@ const Navbar = () => {
                             {/* LOGO */}
 
                             <div className="flex flex-shrink-0 items-center">
-                                <img
+                                <Image
                                     className="block h-12 w-48 lg:hidden"
-                                    src={'/assets/Logo.png'}
+                                    src="/assets/Logo.png"
                                     alt="dsign-logo"
+                                    width={192}
+                                    height={48}
                                 />
-                                <img
-                                    className="hidden h-full w-[350px]  lg:block"
-                                    src={'/assets/Logo.png'}
+                                <Image
+                                    className="hidden h-full w-[350px] lg:block"
+                                    src="/assets/Logo.png"
                                     alt="dsign-logo"
+                                    width={350}
+                                    height={48}
                                 />
                             </div>
 

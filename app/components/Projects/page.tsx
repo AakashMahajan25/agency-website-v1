@@ -16,8 +16,8 @@ const Projects: React.FC = () => {
             <div className='p-2 relative sm:px-10 lg:my-4 lg:px-32 flex md:gap-4 lg:py-10  lg:gap-10 justify-center flex-wrap'>
                 <Image src={wordScribble} alt='wordscribble' className='absolute -top-20 hidden lg:block left-44 lg:-top-32 lg:w-[300px]' />
                 {/* Projects */}
-                {arr.map((item) => (
-                    <div className='group relative my-2 lg:my-0 overflow-hidden w-full rounded-xl   md:w-[45%] '>
+                {arr.map((item, index) => (
+                    <div key={index} className='group relative my-2 lg:my-0 overflow-hidden w-full rounded-xl   md:w-[45%] '>
                         {/* <div className='absolute border top-2 right-2 bg-orange-300 rounded-full text-white px-4 py-1 transition-all duration-1000'>
                             Design
                         </div> */}
